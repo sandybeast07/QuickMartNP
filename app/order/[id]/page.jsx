@@ -10,70 +10,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import clothingItems from '@/components/clothes.json'
 
-const clothingItems = [
-  {
-    id: 1,
-    name: "Oversized Cotton Tee",
-    price: 45.0,
-    originalPrice: 60.0,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "T-Shirts",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: ["Black", "White", "Gray"],
-    description: "Premium cotton blend with a relaxed fit. Perfect for everyday wear with superior comfort and style.",
-  },
-  {
-    id: 2,
-    name: "Vintage Leather Jacket",
-    price: 189.99,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "Outerwear",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Black", "Brown"],
-    description: "Genuine leather jacket with vintage-inspired design. A timeless piece that elevates any outfit.",
-  },
-  {
-    id: 3,
-    name: "Minimalist Hoodie",
-    price: 75.0,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "Hoodies",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Beige", "Black", "Navy"],
-    description: "Clean lines meet ultimate comfort in this essential hoodie. Made from premium cotton fleece.",
-  },
-  {
-    id: 4,
-    name: "Silk Midi Dress",
-    price: 120.0,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "Dresses",
-    sizes: ["XS", "S", "M", "L"],
-    colors: ["Emerald", "Black", "Cream"],
-    description: "Luxurious silk dress with elegant draping. Perfect for special occasions or elevated everyday wear.",
-  },
-  {
-    id: 5,
-    name: "High-Waist Denim",
-    price: 95.0,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "Denim",
-    sizes: ["26", "28", "30", "32", "34"],
-    colors: ["Blue", "Black", "White"],
-    description: "Classic high-waisted jeans with a flattering fit. Made from premium denim with stretch for comfort.",
-  },
-  {
-    id: 6,
-    name: "Cashmere Sweater",
-    price: 150.0,
-    image: "/placeholder.svg?height=500&width=400",
-    category: "Knitwear",
-    sizes: ["XS", "S", "M", "L"],
-    colors: ["Camel", "Ivory", "Charcoal"],
-    description: "Pure cashmere sweater with a refined silhouette. Incredibly soft and perfect for layering.",
-  },
-]
+
 
 export default function OrderPage() {
   const params = useParams()

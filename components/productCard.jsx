@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import { Heart} from "lucide-react"
+import { Heart, ShoppingBag } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -37,7 +37,7 @@ function ProductCard({ item }) {
         {/* Badges */}
         <div className="absolute top-4 left-4 flex flex-col gap-2">
           {item.isTopWeek && (
-            <Badge className="bg-red-500 text-white border-0 text-xs font-medium px-2 py-1">TRENDING</Badge>
+            <Badge className="bg-red-500 text-white border-0 text-xs font-bold px-2 py-1">TRENDING</Badge>
           )}
           {item.isTopMonth && (
             <Badge className="bg-black text-white border-0 text-xs font-medium px-2 py-1">BESTSELLER</Badge>
@@ -64,11 +64,12 @@ function ProductCard({ item }) {
           <Link href={`/order/${item.id}`}>
             <Button
               size="lg"
-              className="bg-white text-black hover:bg-black font-medium px-8 py-3 rounded-none border-2 border-black transition-all duration-300 hover:text-white"
+              className="bg-white text-black hover:bg-black font-medium px-8 py-3 rounded-[30px] border-2 border-black transition-all duration-300 hover:text-white"
             >
               SHOP NOW
             </Button>
           </Link>
+          
         </div>
       </div>
 
