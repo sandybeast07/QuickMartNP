@@ -1,6 +1,7 @@
 import ProductCard from './productCard'
+import clothes from './clothes.json'
 
-const fav = ({clothes, productCard}) => {
+const fav = () => {
 
     const topWeekItems = clothes.filter((item) => item.isTopWeek)
     const topMonthItems = clothes.filter((item) => item.isTopMonth)

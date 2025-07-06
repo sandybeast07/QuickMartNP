@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "name": "Oversized Cotton Tee",
+    "price": 45,
+    "originalPrice": 60,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "T-Shirts",
+    "isTopWeek": true,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "White",
+      "Gray"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Vintage Leather Jacket",
+    "price": 189.99,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "Outerwear",
+    "isTopMonth": true,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Brown"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Minimalist Hoodie",
+    "price": 75,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "Hoodies",
+    "isTopWeek": true,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Beige",
+      "Black",
+      "Navy"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Silk Midi Dress",
+    "price": 120,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "Dresses",
+    "isTopMonth": true,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Emerald",
+      "Black",
+      "Cream"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "High-Waist Denim",
+    "price": 95,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "Denim",
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Blue",
+      "Black",
+      "White"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Cashmere Sweater",
+    "price": 150,
+    "image": "/placeholder.svg?height=500&width=400",
+    "category": "Knitwear",
+    "isTopWeek": true,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Camel",
+      "Ivory",
+      "Charcoal"
+    ]
+  }
+]
