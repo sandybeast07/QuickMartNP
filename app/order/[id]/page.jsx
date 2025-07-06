@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import clothingItems from '@/components/clothes.json'
+import clothingItems from '@/app/pages/clothes.json'
 
 
 
