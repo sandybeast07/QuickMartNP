@@ -9,18 +9,18 @@ const hero = () => {
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
           <h2 className="text-6xl md:text-8xl font-light mb-6 tracking-tight">
-            NEW
+            Fuel Your Game
             <br />
-            <span className="font-bold">COLLECTION</span>
+            <span className="font-bold">Wear the Edge</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 font-light opacity-90">
-            Discover timeless elegance meets modern sophistication
+           Whether it's football, gym, or street — our wear moves with you
           </p>
           <Button
             size="lg"
-            className="bg-white text-black hover:bg-gray-100 font-medium px-12 py-4 rounded-none text-lg tracking-wide"
+            className="bg-white text-black rounded-[30px] hover:bg-gray-400 font-bold px-12 py-4  text-lg tracking-wide"
           >
-            EXPLORE NOW
+            Shop Now
           </Button>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

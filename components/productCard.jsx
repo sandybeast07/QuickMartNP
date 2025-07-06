@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import { Heart, ShoppingBag } from "lucide-react"
+import { Heart } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
