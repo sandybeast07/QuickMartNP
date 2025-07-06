@@ -11,10 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
 export const dynamic = 'force-dynamic';
-export const revalidate = 0; 
+export const revalidate = 0;
 

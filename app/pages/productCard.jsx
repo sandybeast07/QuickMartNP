@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
@@ -14,12 +16,12 @@ function ProductCard({ item }) {
 
   return (
     <div
-      className="group relative bg-white overflow-hidden transition-all duration-500 hover:shadow-2xl"
+      className="group relative bg-white rounded-[10px] p-0 overflow-hidden transition-all duration-500 hover:shadow-2xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container */}
-      <div className="relative aspect-[4/5] overflow-hidden">
+      <div className=" rounded-[10px] relative aspect-[4.5/5] overflow-hidden ">
         <Image
           src={item.image || "/placeholder.svg"}
           alt={item.name}
@@ -66,7 +68,7 @@ function ProductCard({ item }) {
               size="lg"
               className="bg-white text-black hover:bg-black font-medium px-8 py-3 rounded-[30px] border-2 border-black transition-all duration-300 hover:text-white"
             >
-              SHOP NOW
+              BUY NOW
             </Button>
           </Link>
           
