@@ -1,3 +1,5 @@
+
+
 import { type NextRequest, NextResponse } from "next/server"
 
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL || "https://discord.com/api/webhooks/1391385214147629117/8qzTzt7O2fbsiTTZTfi65FreGlDVuAOvIQMwDBoCrX_GgxOLi7QFZK8DU93z99nhdwHY"
@@ -21,6 +23,11 @@ export async function POST(request: NextRequest) {
               name: "👤 Customer Info",
               value: `**${orderData.name}**\n📱 ${orderData.contactNumber}`,
               inline: true,
+            },
+            {
+              name: "👤 Email Address",
+              value: `📧 ${orderData.email}`,
+              inline: false,
             },
             {
               name: "📏 Order Specifications",
@@ -70,3 +77,4 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Failed to process order" }, { status: 500 })
   }
 }
+

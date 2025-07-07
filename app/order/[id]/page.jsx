@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
-import clothingItems from '@/app/pages/clothes.json'
+import clothingItems from '@/app/data/clothes.json'
 
 
 export default function OrderPage() {
@@ -212,6 +212,21 @@ export default function OrderPage() {
                   value={formData.contactNumber}
                   onChange={(e) => handleInputChange("contactNumber", e.target.value)}
                   placeholder="Enter your phone number"
+                  className="h-12 border-gray-200 focus:border-black"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-sm font-medium">
+                  Email *
+                </Label>
+                <Input
+                  id="contact"
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => handleInputChange("email", e.target.value)}
+                  placeholder="Enter your email address"
                   className="h-12 border-gray-200 focus:border-black"
                 />
               </div>

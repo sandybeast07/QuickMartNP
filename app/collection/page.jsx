@@ -1,4 +1,4 @@
-import clothingItems from '@/app/pages/clothes.json'
+import clothingItems from '@/app/data/clothes.json'
 import ProductCard from '@/app/pages/productCard'
 
 const collection = () => {

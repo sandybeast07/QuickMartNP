@@ -57,7 +57,7 @@ export default function HomePage() {
               <Link href="/retro" className="text-gray-900 hover:text-gray-600 font-bold">
                 Retro Kits
               </Link>
-              <Link href="#" className="text-gray-900 hover:text-gray-600 font-bold">
+              <Link href="/newSeason" className="text-gray-900 hover:text-gray-600 font-bold">
                 New Season
               </Link>
               <Link href="#" className="text-gray-900 hover:text-gray-600 font-bold">

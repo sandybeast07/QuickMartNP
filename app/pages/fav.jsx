@@ -1,5 +1,5 @@
 import ProductCard from './productCard'
-import clothes from './clothes.json'
+import clothes from '@/app/data/clothes.json'
 
 const fav = () => {
 
