@@ -13,7 +13,6 @@ import Link from "next/link"
 import clothingItems from '@/app/pages/clothes.json'
 
 
-
 export default function OrderPage() {
   const params = useParams()
   const router = useRouter()

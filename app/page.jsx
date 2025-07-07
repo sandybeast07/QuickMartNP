@@ -1,5 +1,6 @@
 "use client"
 
+
 import { useState } from "react"
 import Fav from "@/app/pages/fav"
 import Newsletter from "@/app/pages/newsletter"
@@ -20,36 +21,33 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold tracking-tight">LUXE
-                <div className="relative inline-block">
-                  <div
-                    className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1.5 relative left-[20px] bottom-[4px] rounded-full text-sm font-bold uppercase tracking-wide cursor-pointer hover:from-orange-600 hover:to-red-600 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                  >
-                    <span>Beta</span>
-                    <Wrench className={` w-4 h-4 transition-transform duration-300 ${isHovered ? "rotate-12" : ""}`} />
-                  </div>
-
-                  {/* Enhanced Tooltip */}
-                  {isHovered && (
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 mb-3 px-4 py-3 bg-gray-900 text-white text-sm rounded-xl shadow-2xl whitespace-nowrap z-20 animate-in fade-in-0 zoom-in-95 duration-200">
-                      <div className="flex items-center gap-2 mb-2">
-                        <AlertTriangle className="w-4 h-4 text-yellow-400" />
-                        <span className="font-semibold text-yellow-400">Development Mode</span>
-                      </div>
-                      <div className="text-xs text-gray-300 space-y-1">
-                        <div>• Features are actively being developed</div>
-                        <div>• Some functionality may be unstable</div>
-                      </div>
-                      {/* Tooltip Arrow */}
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-6 border-transparent border-t-gray-900"></div>
-                    </div>
-                  )}
+              <div className="relative flex">
+                <img src="/quickmart.png" alt="Logo" className="w-[50px] h-[50px] rounded-[20px]" />
+                <div
+                  className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 relative left-[20px] bottom-[4px] rounded-full text-sm font-bold uppercase tracking-wide cursor-pointer hover:from-orange-600 hover:to-red-600 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <span>Beta</span>
+                  <Wrench className={` w-4 h-4 transition-transform duration-300 ${isHovered ? "rotate-12" : ""}`} />
                 </div>
 
-              </h1>
-
+                {/* Enhanced Tooltip */}
+                {isHovered && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mb-3 px-4 py-3 bg-gray-900 text-white text-sm rounded-xl shadow-2xl whitespace-nowrap z-20 animate-in fade-in-0 zoom-in-95 duration-200">
+                    <div className="flex items-center gap-2 mb-2">
+                      <AlertTriangle className="w-4 h-4 text-yellow-400" />
+                      <span className="font-semibold text-yellow-400">Development Mode</span>
+                    </div>
+                    <div className="text-xs text-gray-300 space-y-1">
+                      <div>• Features are actively being developed</div>
+                      <div>• Some functionality may be unstable</div>
+                    </div>
+                    {/* Tooltip Arrow */}
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-6 border-transparent border-t-gray-900"></div>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Desktop Navigation */}
