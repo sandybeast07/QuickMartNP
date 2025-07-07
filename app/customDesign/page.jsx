@@ -3,8 +3,8 @@ import ProductCard from '@/app/pages/productCard'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
-function newSeason() {
-    const newSeason = clothes.filter((item) => item.isNewSeason)
+function customDesign() {
+    const customDesign = clothes.filter((item) => item.isCustomDesign)
     return (
         <div className="p-20 pt-3">
             <header className="bg-white border-b border-gray-100">
@@ -18,12 +18,12 @@ function newSeason() {
                 </div>
             </header>
             <div className="text-center my-10">
-                <h2 className="text-4xl font-light mb-4 tracking-tight">Retro Kits</h2>
+                <h2 className="text-4xl font-light mb-4 tracking-tight">Custom Designs</h2>
                 <div className="w-24 h-0.5 bg-black mx-auto mb-6" />
-                <p className="text-gray-600 text-lg max-w-2xl mx-auto">Classic kits reimagined for modern games</p>
+                <p className="text-gray-600 text-lg max-w-2xl mx-auto">Portraying brain on clothes</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-9">
-                {newSeason.map((item) => (
+                {customDesign.map((item) => (
                     <ProductCard key={item.id} item={item} />
                 ))}
             </div>
@@ -31,4 +31,4 @@ function newSeason() {
     )
 }
 
-export default newSeason
+export default customDesign

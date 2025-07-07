@@ -1,4 +1,4 @@
-import clothes from '@/app/pages/clothes.json'
+import clothes from '@/app/data/clothes.json'
 import ProductCard from '@/app/pages/productCard'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'

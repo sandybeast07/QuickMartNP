@@ -1,6 +1,5 @@
 "use client"
 
-
 import { useState } from "react"
 
 import Fav from "@/app/pages/fav"
@@ -60,7 +59,7 @@ export default function HomePage() {
               <Link href="/newSeason" className="text-gray-900 hover:text-gray-600 font-bold">
                 New Season
               </Link>
-              <Link href="#" className="text-gray-900 hover:text-gray-600 font-bold">
+              <Link href="/customDesign" className="text-gray-900 hover:text-gray-600 font-bold">
                 Custom Designed
               </Link>
               <Link href="#" className="text-gray-900 hover:text-gray-600 font-bold">
