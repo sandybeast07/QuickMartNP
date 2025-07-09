@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Oversized Cotton Tee",
-    "price": 45,
-    "originalPrice": 60,
+    "newPrice": 45,
+    "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
     "isTopWeek": true,
@@ -121,8 +121,8 @@
   {
     "id": 7,
     "name": "Oversized Cotton Tee",
-    "price": 45,
-    "originalPrice": 60,
+    "newprice": 45,
+    "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
     "isTopWeek": true,
@@ -140,11 +140,12 @@
       "Gray"
     ]
   },
+  
   {
     "id": 8,
     "name": "Oversized Cotton Tee",
-    "price": 45,
-    "originalPrice": 60,
+    "newPrice": 45,
+    "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
     "isTopWeek": true,
@@ -165,8 +166,8 @@
   {
     "id": 9,
     "name": "Oversized Cotton Tee",
-    "price": 45,
-    "originalPrice": 60,
+    "newPrice": 45,
+    "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
     "isTopWeek": true,

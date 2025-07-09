@@ -62,7 +62,7 @@ export default function HomePage() {
               <Link href="/customDesign" className="text-gray-900 hover:text-gray-600 font-bold">
                 Custom Designed
               </Link>
-              <Link href="#" className="text-gray-900 hover:text-gray-600 font-bold">
+              <Link href="/sale" className="text-gray-900 hover:text-gray-600 font-bold">
                 Sale
               </Link>
             </div>
