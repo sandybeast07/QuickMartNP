@@ -23,6 +23,7 @@ export default function OrderPage() {
     address: "",
     contactNumber: "",
     size: "",
+    quantity:"",
     tiktokId: "",
   })
 
@@ -124,9 +125,8 @@ export default function OrderPage() {
                     <button
                       key={color}
                       onClick={() => setSelectedColor(color)}
-                      className={`w-12 h-12 rounded-full border-2 transition-all ${
-                        selectedColor === color ? "border-black scale-110" : "border-gray-200"
-                      }`}
+                      className={`w-12 h-12 rounded-full border-2 transition-all ${selectedColor === color ? "border-black scale-110" : "border-gray-200"
+                        }`}
                       style={{
                         backgroundColor:
                           color.toLowerCase() === "white"
@@ -235,6 +235,19 @@ export default function OrderPage() {
               </div>
 
               <div className="space-y-2">
+                <Label htmlFor="quantity" className="text-sm font-medium">
+                  Quantity
+                </Label>
+                <Input
+                  id="quantity"
+                  type="number"
+                  value={formData.quantity ?? ""}
+                  onChange={(e) => handleInputChange("quantity", e.target.value)}
+                  className="h-12 border-gray-200 focus:border-black"
+                />
+              </div>
+
+              <div className="space-y-2">
                 <Label htmlFor="tiktok" className="text-sm font-medium">
                   TikTok ID
                 </Label>
@@ -270,7 +283,7 @@ export default function OrderPage() {
                 <div className="border-t pt-4">
                   <div className="flex justify-between text-lg font-medium">
                     <span>Total</span>
-                    <span>${item.price}</span>
+                    <span>${item.price * formData.quantity}</span>
                   </div>
                 </div>
               </div>

@@ -33,6 +33,11 @@ export async function POST(request: NextRequest) {
               inline: true,
             },
             {
+              name: "📏 Order Quantity",
+              value: `**Quantity:** ${orderData.quantity}\n**Total Price:** $${(item.price * orderData.quantity).toFixed(2)}`,
+              inline: true,
+            },
+            {
               name: "📍 Delivery Address",
               value: orderData.address,
               inline: false,
