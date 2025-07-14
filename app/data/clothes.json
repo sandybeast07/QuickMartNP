@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Oversized Cotton Tee",
-    "newPrice": 45,
+    "price": 45,
     "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
@@ -121,7 +121,7 @@
   {
     "id": 7,
     "name": "Oversized Cotton Tee",
-    "newprice": 45,
+    "price": 45,
     "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
@@ -144,7 +144,7 @@
   {
     "id": 8,
     "name": "Oversized Cotton Tee",
-    "newPrice": 45,
+    "price": 45,
     "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",
@@ -166,7 +166,7 @@
   {
     "id": 9,
     "name": "Oversized Cotton Tee",
-    "newPrice": 45,
+    "price": 45,
     "oldPrice": 60,
     "image": "/placeholder.svg?height=500&width=400",
     "category": "T-Shirts",

@@ -3,7 +3,6 @@
 import { useState } from "react"
 
 import Fav from "@/app/pages/fav"
-import Newsletter from "@/app/pages/newsletter"
 import Footer from "@/app/pages/footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -100,7 +99,6 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Fav />
       </div>
-      <Newsletter />
       <Footer />
 
     </div>

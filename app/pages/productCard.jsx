@@ -49,13 +49,14 @@ function ProductCard({ item }) {
           )}
         </div>
 
-        {/* Wishlist */}
+        {/* Wishlist 
         <button
           onClick={() => setIsLiked(!isLiked)}
           className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:bg-white hover:scale-110"
         >
           <Heart className={`w-4 h-4 transition-colors ${isLiked ? "fill-red-500 text-red-500" : "text-gray-600"}`} />
         </button>
+        */}
 
         {/* Buy Now Button */}
         <div
@@ -130,7 +131,7 @@ function ProductCard({ item }) {
         {/* Price */}
         <div className="flex items-center gap-2">
           <span className="text-xl font-semibold">${item.price}</span>
-          {item.originalPrice && <span className="text-sm text-gray-500 line-through">${item.originalPrice}</span>}
+          {item.oldPrice && <span className="text-sm text-gray-500 line-through">${item.oldPrice}</span>}
         </div>
 
         {/* Sizes */}

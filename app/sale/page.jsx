@@ -13,10 +13,10 @@ import clothes from "@/app/data/clothes.json"
 export default function Sale() {
     const [saleItems, setSaleItems] = useState([])
 
-    const onSaleItems = clothes.filter((item) => item.oldPrice && item.newPrice)
+    const onSaleItems = clothes.filter((item) => item.oldPrice && item.price)
 
-    const calculateDiscount = (oldPrice, newPrice) => {
-        return Math.round(((oldPrice - newPrice) / oldPrice) * 100)
+    const calculateDiscount = (oldPrice, price) => {
+        return Math.round(((oldPrice - price) / oldPrice) * 100)
     }
 
     return (
@@ -34,7 +34,7 @@ export default function Sale() {
             </header>
 
             <div className="min-h-screen bg-background">
-                {/* Header */}
+                {/* Header - back to sale button */}
                 <div className="bg-red-600 text-white py-4">
                     <div className="container mx-auto px-4">
                         <div className="text-center">
@@ -46,8 +46,6 @@ export default function Sale() {
 
                 {/* Sale Items */}
                 <div className="container mx-auto px-4 py-8">
-
-
                     {onSaleItems.length === 0 ? (
                         <div className="text-center py-12">
                             <p className="text-lg text-muted-foreground">No sale items available at the moment.</p>
@@ -66,7 +64,7 @@ export default function Sale() {
                                                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                                             />
                                             <Badge className="absolute top-2 left-2 bg-red-600 hover:bg-red-700">
-                                                -{calculateDiscount(item.oldPrice, item.newPrice)}%
+                                                -{calculateDiscount(item.oldPrice, item.price)}%
                                             </Badge>
                                         </div>
 
@@ -78,12 +76,12 @@ export default function Sale() {
                                             <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{item.description}</p>
 
                                             <div className="flex items-center gap-2 mb-4">
-                                                <span className="text-2xl font-bold text-red-600">${item.newPrice.toFixed(2)}</span>
+                                                <span className="text-2xl font-bold text-red-600">${item.price.toFixed(2)}</span>
                                                 <span className="text-lg text-muted-foreground line-through">${item.oldPrice.toFixed(2)}</span>
                                             </div>
 
                                             <div className="text-sm text-green-600 font-medium mb-3">
-                                                You save ${(item.oldPrice - item.newPrice).toFixed(2)}
+                                                You save ${(item.oldPrice - item.price).toFixed(2)}
                                             </div>
                                         </div>
                                     </CardContent>
