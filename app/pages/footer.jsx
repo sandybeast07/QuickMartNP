@@ -29,27 +29,22 @@ const footer = () => {
               <h4 className="font-semibold mb-4 text-lg">Shop</h4>
               <ul className="space-y-3 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    New Arrivals
+                  <Link href="/retro" className="hover:text-white transition-colors">
+                    Retro Kits
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Women
+                  <Link href="/newSeason" className="hover:text-white transition-colors">
+                    New Season
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Men
+                  <Link href="/custonDesigns" className="hover:text-white transition-colors">
+                    Custon Designs
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Accessories
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="/sale" className="hover:text-white transition-colors">
                     Sale
                   </Link>
                 </li>
@@ -65,8 +60,8 @@ const footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Size Guide
+                  <Link href="/sizeChart" className='hover:text-white transition-colors'>
+                  Size Guide
                   </Link>
                 </li>
                 <li>
